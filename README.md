@@ -3,3 +3,12 @@
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
+
+
+Taken:
+- plan van aanpak maken 
+- Achtergrond strand zoeken.
+- Achtergrond water zoeken. 
+- Afbeelding van elk visitekaartje.
+- Url van visitekaartje bij de bijbehorende afbeelding
+- 
