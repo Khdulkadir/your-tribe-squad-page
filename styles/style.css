@@ -65,7 +65,7 @@ h1{
     z-index: 3;
     padding: 0.5em;
     width: 100%;
-    animation: card-movement 4s infinite ease;
+    animation: card-movement 4s ease forwards;
 }
 
 .card-row{
@@ -90,8 +90,8 @@ h1{
 
 @keyframes card-movement {
     0% {top: 0;}
-    50% {top: 15em;}
-    100% {top: 0;}
+    /* 50% {top: 15em;} */
+    100% {top: 25em;}
 }
 
 @keyframes dark-sea-movement {
