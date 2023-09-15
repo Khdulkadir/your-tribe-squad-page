@@ -17,6 +17,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 header{
@@ -108,6 +109,9 @@ h1{
     z-index: 3;
     padding: 0.5em;
     width: 100%;
+}
+
+.cards-animation {
     animation: card-movement 4s ease forwards;
 }
 
@@ -120,6 +124,18 @@ h1{
 
 .card{
     margin: 0.5em;
+}
+
+.card:nth-child(1){
+    animation: card-1 4s ease forwards;
+}
+
+.card:nth-child(2){
+    animation: card-2 4s ease forwards;
+}
+
+.card:nth-child(3){
+    animation: card-3 4s ease forwards;
 }
 
 button {
@@ -151,4 +167,31 @@ button {
     0% {opacity: 0;}
     25% {opacity: 0.5;}
     100% {opacity: 0;}
+}
+
+@keyframes card-1 {
+    0% {rotate: 0;}
+    20% {rotate: -5deg;}
+    40% {rotate: 5deg;}
+    60% {rotate: -5deg;}
+    80% {rotate: 5deg;}
+    100% {rotate: 0;}
+}
+
+@keyframes card-2 {
+    0% {rotate: 0;}
+    20% {rotate: 9deg;}
+    40% {rotate: -9deg;}
+    60% {rotate: 9deg;}
+    80% {rotate: -9deg;}
+    100% {rotate: 0;}
+}
+
+@keyframes card-3 {
+    0% {rotate: 0;}
+    20% {rotate: -7deg;}
+    40% {rotate: 7deg;}
+    60% {rotate: -7deg;}
+    80% {rotate: 7deg;}
+    100% {rotate: 0;}
 }
