@@ -29,6 +29,47 @@ header{
     z-index: 5;
 }
 
+nav {
+    float:right;
+    margin-top: -25px;
+}
+
+ul.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul.horizontal-menu li {
+    margin-right: 10px;
+}
+
+ul.horizontal-menu li:last-child {
+    margin-right: 0;
+}
+
+ul.horizontal-menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ul.horizontal-menu li a:hover {
+    background-color: #2980b9;
+}
+
+#shuffle {
+    margin-top: -3px
+}
+
+#mute {
+    margin-top: -3px;
+    padding-left: 30px
+}
+
 h1{
     font-style: italic;
     color: dodgerblue;
