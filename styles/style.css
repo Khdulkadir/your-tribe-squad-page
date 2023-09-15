@@ -93,7 +93,7 @@ h1{
 @keyframes card-movement {
     0% {top: 0;}
     /* 50% {top: 15em;} */
-    100% {top: 25em;}
+    100% {top: 35em;}
 }
 
 @keyframes dark-sea-movement {
