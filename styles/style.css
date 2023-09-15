@@ -12,8 +12,8 @@ body, html {
 body{
     height: 100%;
     width: 100%;
-    /* background-image: url('/assets/Achtergronden/sand.jpg'); */
-    background-image: linear-gradient(90deg, #edcd9a, #f0e4cf);
+    background-image: url('/assets/Achtergronden/sand.jpg');
+    /* background-image: linear-gradient(90deg, #edcd9a, #f0e4cf); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
