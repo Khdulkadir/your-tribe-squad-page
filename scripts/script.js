@@ -5,6 +5,7 @@ function loadImages(){
     const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/'];
 
     const container = document.getElementById('image-container');
+    const sea = document.getElementById('sea');
      
     for (let i = 0; i < images.length; i++) {
         const div = document.createElement('div');
@@ -20,6 +21,14 @@ function loadImages(){
         div.appendChild(a);
         a.appendChild(img);
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group1(){
@@ -29,6 +38,7 @@ function group1(){
     
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -53,6 +63,14 @@ function group1(){
     }else{
         cards.classList.add("cards-animation");
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group2(){
@@ -61,6 +79,7 @@ function group2(){
     const links = [];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -85,6 +104,14 @@ function group2(){
     }else{
         cards.classList.add("cards-animation");
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group3(){
@@ -93,6 +120,7 @@ function group3(){
     const links = [];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -117,6 +145,14 @@ function group3(){
     }else{
         cards.classList.add("cards-animation");
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group4(){
@@ -125,6 +161,7 @@ function group4(){
     const links = [];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -149,6 +186,14 @@ function group4(){
     }else{
         cards.classList.add("cards-animation");
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group5(){
@@ -157,6 +202,7 @@ function group5(){
     const links = [];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -181,6 +227,14 @@ function group5(){
     }else{
         cards.classList.add("cards-animation");
     }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
+    }
 }
 
 function group6(){
@@ -189,6 +243,7 @@ function group6(){
     const links = [];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
+    const sea = document.getElementById('sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -212,6 +267,14 @@ function group6(){
         cards.classList.add("cards-animation");
     }else{
         cards.classList.add("cards-animation");
+    }
+
+    if (sea.classList.contains('sea-animation')){
+        sea.classList.remove("sea-animation");
+        sea.offsetWidth
+        sea.classList.add("sea-animation");
+    }else{
+        sea.classList.add("sea-animation");
     }
 }
 
