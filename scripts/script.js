@@ -14,8 +14,6 @@ function loadImages(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -39,8 +37,6 @@ function group1(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -71,8 +67,6 @@ function group2(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -103,8 +97,6 @@ function group3(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -135,8 +127,6 @@ function group4(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -167,8 +157,6 @@ function group5(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
@@ -199,8 +187,6 @@ function group6(){
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
