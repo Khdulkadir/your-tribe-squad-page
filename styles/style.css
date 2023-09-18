@@ -161,13 +161,14 @@ button {
     color: blue;
 }
 
-#card1-0 img, #card2-1 img {
+#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img {
     height: 150px;
 }
 
-#card1-1 img, #card1-2 img, #card2-0 img, #card2-2 img {  
+#card1-1 img, #card1-2 img, #card2-0 img, #card2-2 img, #card4-2 img{  
     height: 200px;
 }
+
 
 @keyframes sea-movement {
     0% {top: -20em;}
@@ -223,6 +224,9 @@ button {
     100% {rotate: 0;}
 }
 
+
+/* media query */
+/*mobile */
 @media (max-width:767px) {
     body{
         overflow: hidden;
@@ -231,7 +235,6 @@ button {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgb(65, 185, 79);
         z-index: 3;
         padding: 0.5em;
         width: 100%;
@@ -239,13 +242,58 @@ button {
         overflow: hidden;
  
     }
+    #Group1{
+        visibility: hidden;
+    }
+    #Group2{
+        visibility: hidden;
+    }
+    #Group3{
+        visibility: hidden;
+    }
+    #Group4{
+        visibility: hidden;
+    }
+    #Group5{
+        visibility: hidden;
+    }
+    #Group6{
+        visibility: hidden;
+    }
     h1{
         font-size: 20px;
     }
 
-    
-    
 }
+
+/* tablet */
+
+@media(min-width:768px) and (max-width:1279px){
+    #Group1{
+        visibility: hidden;
+    }
+    #Group2{
+        visibility: hidden;
+    }
+    #Group3{
+        visibility: hidden;
+    }
+    #Group4{
+        visibility: hidden;
+    }
+    #Group5{
+        visibility: hidden;
+    }
+    #Group6{
+        visibility: hidden;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+
+}
+/* desktop */
 @media (min-width:1280px) {
     .dropdown{
         visibility: hidden;
