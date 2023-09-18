@@ -148,6 +148,18 @@ button {
     color: blue;
 }
 
+#card-0 img {
+    height: 150px;
+}
+
+#card-1 img {  
+    height: 200px;
+}
+
+#card-2 img {
+    height: 200px;
+}
+
 @keyframes sea-movement {
     0% {top: -20em;}
     50% {top: 1em;}
