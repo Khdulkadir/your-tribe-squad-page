@@ -215,70 +215,8 @@ function group6(){
     }
 }
 
-function group7(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
-
-    const links = [];
-    const container = document.getElementById('image-container');
-    const cards = document.getElementById('card-grid');
-    container.textContent = '';
-
-    for (let i = 0; i < images.length; i++) {
-        const div = document.createElement('div');
-        div.setAttribute("id", "card7-" + [i]);
-        div.classList.add("card");
-        const a = document.createElement('a');
-        const img = document.createElement('img');
-        a.href = links[i]
-        img.src = images[i];
-        img.width = 250;
-        img.height = 200;
-        container.appendChild(div);
-        div.appendChild(a);
-        a.appendChild(img);
-    }
-
-    if (cards.classList.contains('cards-animation')){
-        cards.classList.remove("cards-animation");
-        cards.offsetWidth
-        cards.classList.add("cards-animation");
-    }else{
-        cards.classList.add("cards-animation");
-    }
-}
-
-function group8(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
-
-    const links = [];
-    const container = document.getElementById('image-container');
-    const cards = document.getElementById('card-grid');
-    container.textContent = '';
-
-    for (let i = 0; i < images.length; i++) {
-        const div = document.createElement('div');
-        div.setAttribute("id", "card8-" + [i]);
-        div.classList.add("card");
-        const a = document.createElement('a');
-        const img = document.createElement('img');
-        a.href = links[i]
-        img.src = images[i];
-        container.appendChild(div);
-        div.appendChild(a);
-        a.appendChild(img);
-    }
-
-    if (cards.classList.contains('cards-animation')){
-        cards.classList.remove("cards-animation");
-        cards.offsetWidth
-        cards.classList.add("cards-animation");
-    }else{
-        cards.classList.add("cards-animation");
-    }
-}
-
 function Shuffle() {
-    const random = Math.floor(Math.random() * 8);
+    const random = Math.floor(Math.random() * 6);
     if (random === 1){
         group1();
     }else if (random === 2){
@@ -291,11 +229,6 @@ function Shuffle() {
         group5();
     }else if (random === 6){
         group6();
-    }else if (random === 7){
-        group7();
-    }else if (random === 8){
-        group8();
     }
-    
 }
 
