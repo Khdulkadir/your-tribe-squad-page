@@ -71,6 +71,7 @@ ul.horizontal-menu li a:hover {
     padding-left: 30px
 }
 
+
 h1{
     font-style: italic;
     color: dodgerblue;
@@ -203,4 +204,35 @@ button {
     60% {rotate: -7deg;}
     80% {rotate: 7deg;}
     100% {rotate: 0;}
+}
+
+@media (max-width:767px) {
+    body{
+        overflow: hidden;
+    }
+    .card-grid{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(65, 185, 79);
+        z-index: 3;
+        padding: 0.5em;
+        width: 100%;
+        animation: card-movement 4s ease forwards;
+        overflow: hidden;
+ 
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    
+    
+}
+@media (min-width:1280px) {
+    .dropdown{
+        visibility: hidden;
+    }
+
+    
 }
