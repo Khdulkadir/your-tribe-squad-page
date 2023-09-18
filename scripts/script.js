@@ -6,6 +6,7 @@ function loadImages(){
 
     const container = document.getElementById('image-container');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
      
     for (let i = 0; i < images.length; i++) {
         const div = document.createElement('div');
@@ -22,10 +23,14 @@ function loadImages(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
@@ -37,6 +42,7 @@ function group1(){
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -62,10 +68,14 @@ function group1(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
@@ -76,6 +86,7 @@ function group2(){
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -101,10 +112,14 @@ function group2(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
@@ -115,6 +130,7 @@ function group3(){
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -140,20 +156,25 @@ function group3(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
 function group4(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
+    const images = ['assets/kaarten/Kaart_Alisa.png', 'assets/kaarten/Kaart_Rutger.png', 'assets/kaarten/Kaart_Primie.png'];
 
-    const links = [];
+    const links = ['https://aliceafanasieva.github.io/your-tribe-profile-card/', 'https://rutgerkock.github.io/your-tribe-profile-card/', 'https://prz6.github.io/your-tribe-profile-card/index.html'];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -179,10 +200,14 @@ function group4(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
@@ -193,6 +218,7 @@ function group5(){
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -218,10 +244,14 @@ function group5(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
@@ -232,6 +262,7 @@ function group6(){
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
+    const darksea = document.getElementById('dark-sea');
     container.textContent = '';
 
     for (let i = 0; i < images.length; i++) {
@@ -257,10 +288,14 @@ function group6(){
 
     if (sea.classList.contains('sea-animation')){
         sea.classList.remove("sea-animation");
+        darksea.classList.remove("dark-sea-animation");
         sea.offsetWidth
+        darksea.offsetWidth
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }else{
         sea.classList.add("sea-animation");
+        darksea.classList.add("dark-sea-animation");
     }
 }
 
