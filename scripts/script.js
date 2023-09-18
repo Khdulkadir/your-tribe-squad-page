@@ -80,7 +80,7 @@ function group1(){
 }
 
 function group2(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
+    const images = ['assets/kaarten/Kaart_Zoe.png', 'assets/kaarten/Kaart_Seijno.png', 'assets/kaarten/Kaart_Larissa.png'];
 
     const links = [];
     const container = document.getElementById('image-container');
@@ -126,7 +126,7 @@ function group2(){
 function group3(){
     const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
 
-    const links = [];
+    const links = ['https://belkace1.github.io/your-tribe-profile-card/', 'https://latoyaln.github.io/your-tribe-profile-card/', 'https://tindyy.github.io/your-tribe-profile-card/'];
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
     const sea = document.getElementById('sea');
@@ -212,7 +212,7 @@ function group4(){
 }
 
 function group5(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
+    const images = ['assets/kaarten/Kaart_Saif.png', 'assets/kaarten/Kaart_Jelte.png', 'assets/kaarten/Kaart_Shanna.png', 'assets/kaarten/Kaart_Mo.png'];
 
     const links = [];
     const container = document.getElementById('image-container');
@@ -256,7 +256,7 @@ function group5(){
 }
 
 function group6(){
-    const images = ['assets/kaarten/Kaart_Belkacem.png', 'assets/kaarten/Kaart_Latoya.png', 'assets/kaarten/Kaart_Tessa.png'];
+    const images = ['assets/kaarten/Kaart_Tygo.png', 'assets/kaarten/Kaart_Tristan.png', 'assets/kaarten/Kaart_Ellenoor.png'];
 
     const links = [];
     const container = document.getElementById('image-container');

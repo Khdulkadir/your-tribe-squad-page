@@ -102,11 +102,15 @@ h1{
 }
 
 .sea-animation{
-    animation: sea-movement 4s forwards ease;
+    animation: sea-movement 4s infinite ease;
+}
+
+.sea-animation2{
+    animation: sea-movement2 4s infinite ease;
 }
 
 .dark-sea-animation{
-    animation: dark-sea-movement 4s forwards ease;
+    animation: dark-sea-movement 4s infinite ease;
 }
 
 .card-grid{
@@ -128,6 +132,7 @@ h1{
     /* background-color: darkgoldenrod; */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -170,6 +175,12 @@ button {
     100% {top: -20em;}
 }
 
+@keyframes sea-movement2 {
+    0% {top: -40em;}
+    50% {top: 1em;}
+    100% {top: -40em;}
+}
+
 @keyframes card-movement {
     0% {top: 0; rotate: 0;}
     20% {rotate: 5deg;}
@@ -180,8 +191,9 @@ button {
 }
 
 @keyframes dark-sea-movement {
-    0% {opacity: 0.5;}
-    100% {opacity: 0.2;}
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
 }
 
 @keyframes card-1 {
