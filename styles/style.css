@@ -156,13 +156,14 @@ button {
     color: blue;
 }
 
-#card1-0 img, #card2-1 img {
+#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img {
     height: 150px;
 }
 
-#card1-1 img, #card1-2 img, #card2-0 img, #card2-2 img {  
+#card1-1 img, #card1-2 img, #card2-0 img, #card2-2 img, #card4-2 img{  
     height: 200px;
 }
+
 
 @keyframes sea-movement {
     0% {top: -20em;}
