@@ -42,8 +42,6 @@ function runAnimation() {
         const img = document.createElement('img');
         a.href = links[i]
         img.src = images[i];
-        img.width = 250;
-        img.height = 200;
         container.appendChild(div);
         div.appendChild(a);
         a.appendChild(img);
