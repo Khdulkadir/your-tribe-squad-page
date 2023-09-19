@@ -1,8 +1,8 @@
 
 function loadImages(){
-    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/Kaart_Rukiya.png'];
+    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/Kaart_Rukiya.png', 'assets/kaarten/Kaart_Yassir.png'];
 
-    const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/'];
+    const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/', 'https://yassirog.github.io/your-tribe-profile-card/'];
 
     const container = document.getElementById('image-container');
     const sea = document.getElementById('sea');
@@ -35,9 +35,9 @@ function loadImages(){
 }
 
 function group1(){
-    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/Kaart_Rukiya.png'];
+    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/Kaart_Rukiya.png', 'assets/kaarten/Kaart_Yassir.png'];
 
-    const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/'];
+    const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/', 'https://yassirog.github.io/your-tribe-profile-card/'];
     
     const container = document.getElementById('image-container');
     const cards = document.getElementById('card-grid');
