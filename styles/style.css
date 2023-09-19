@@ -26,13 +26,14 @@ header{
     left: 0;
     width: 100%;
     padding: 0.5em;
-    background-color: white;
+    background-color: #65dade;
     z-index: 5;
 }
 
 nav {
     float:right;
     margin-top: -25px;
+    padding: 5px 5px;
 }
 
 ul.horizontal-menu {
@@ -53,13 +54,13 @@ ul.horizontal-menu li:last-child {
 ul.horizontal-menu li a {
     text-decoration: none;
     padding: 5px 10px;
-    background-color: #3498db;
+    background-color: #34d5db;
     color: #fff;
     border-radius: 5px;
 }
 
 ul.horizontal-menu li a:hover {
-    background-color: #2980b9;
+    background-color: #29a9ad;
 }
 
 #shuffle {
@@ -74,7 +75,7 @@ ul.horizontal-menu li a:hover {
 
 h1{
     font-style: italic;
-    color: dodgerblue;
+    color: white;
     font-weight: bold;
 }
 
