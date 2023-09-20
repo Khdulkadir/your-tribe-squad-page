@@ -8,6 +8,16 @@
     <script src="scripts/script.js"></script>
 </head>
 <body onload="loadImages()">
+
+    <audio id="beach-sound" autoplay loop>
+        <source src="assets/Geluid/beach.mp3" type="audio/mp3" />
+    </audio>
+
+    <audio id="seagull-sound" autoplay loop>
+        <source src="assets/Geluid/seagull.mp3" type="audio/mp3" />
+    </audio>
+      
+
     <article class="sand-img"></article>
     <header>
         <h1>Squad Page</h1>
@@ -18,7 +28,7 @@
             <li id="Group4"><a href="#" onclick="group4()">Slay</a></li>
             <li id="Group5"><a href="#" onclick="group5()">JSS</a></li>
             <li id="Group6"><a href="#" onclick="group6()">Gokverslaafde</a></li>
-            <li id="mute"><a href="#">🔇</a></li>
+            <li><a href="#" id="speaker" onclick="music()">🔊</a></li>
             <li id="shuffle"><a href="#" onclick="Shuffle()">🔀</a></li>
             <li class="dropdown"><a href="#">Groups</a></li>
             </ul>

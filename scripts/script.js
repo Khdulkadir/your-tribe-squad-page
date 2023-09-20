@@ -1,3 +1,19 @@
+function music(){
+    var beach = document.getElementById('beach-sound');
+    var seagull = document.getElementById('seagull-sound');
+
+    seagull.volume = 0.5;
+
+    if (beach.paused) {
+        beach.play();
+        seagull.play();
+        document.getElementById('speaker').textContent = '🔇';
+    } else {
+        beach.pause();
+        seagull.pause();
+        document.getElementById('speaker').textContent = '🔊';
+    }
+}
 
 function loadImages(){
     const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/kaart_Rukiya.png', 'assets/kaarten/Kaart_Yassir.png'];

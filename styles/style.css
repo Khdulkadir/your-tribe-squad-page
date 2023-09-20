@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    position: relative;
 }
 
 .sand-img{
@@ -27,7 +28,7 @@ body{
     width: 100%;
     background-image: url('../assets/Achtergronden/sand.jpg');
     opacity: 0.1;
-    z-index: 2;
+    z-index: 1;
 }
 
 .sea-img{
@@ -104,7 +105,7 @@ h1{
     height: 30em;
     width: 100%;
     clip-path: polygon(100% 0%, 0% 0% , 0.00% 95.00%, 2.00% 94.85%, 4.00% 94.43%, 6.00% 93.81%, 8.00% 93.10%, 10.00% 92.44%, 12.00% 91.94%, 14.00% 91.69%, 16.00% 91.73%, 18.00% 92.06%, 20.00% 92.62%, 22.00% 93.31%, 24.00% 94.00%, 26.00% 94.58%, 28.00% 94.92%, 30.00% 94.99%, 32.00% 94.75%, 34.00% 94.26%, 36.00% 93.60%, 38.00% 92.90%, 40.00% 92.27%, 42.00% 91.83%, 44.00% 91.67%, 46.00% 91.80%, 48.00% 92.21%, 50.00% 92.82%, 52.00% 93.52%, 54.00% 94.19%, 56.00% 94.71%, 58.00% 94.97%, 60.00% 94.95%, 62.00% 94.63%, 64.00% 94.08%, 66.00% 93.40%, 68.00% 92.70%, 70.00% 92.12%, 72.00% 91.75%, 74.00% 91.68%, 76.00% 91.89%, 78.00% 92.37%, 80.00% 93.02%, 82.00% 93.73%, 84.00% 94.36%, 86.00% 94.81%, 88.00% 95.00%, 90.00% 94.88%, 92.00% 94.49%, 94.00% 93.89%, 96.00% 93.19%, 98.00% 92.51%, 100.00% 91.98%);
-    z-index: 3;
+    z-index: 2;
 }
 
 .sea{
@@ -114,7 +115,7 @@ h1{
     left: 0;
     width: 100%;
     height: 30em;
-    z-index: 5;
+    z-index: 4;
     opacity: 0.9;
     clip-path: polygon(100% 0%, 0% 0% , 0.00% 95.00%, 2.00% 94.85%, 4.00% 94.43%, 6.00% 93.81%, 8.00% 93.10%, 10.00% 92.44%, 12.00% 91.94%, 14.00% 91.69%, 16.00% 91.73%, 18.00% 92.06%, 20.00% 92.62%, 22.00% 93.31%, 24.00% 94.00%, 26.00% 94.58%, 28.00% 94.92%, 30.00% 94.99%, 32.00% 94.75%, 34.00% 94.26%, 36.00% 93.60%, 38.00% 92.90%, 40.00% 92.27%, 42.00% 91.83%, 44.00% 91.67%, 46.00% 91.80%, 48.00% 92.21%, 50.00% 92.82%, 52.00% 93.52%, 54.00% 94.19%, 56.00% 94.71%, 58.00% 94.97%, 60.00% 94.95%, 62.00% 94.63%, 64.00% 94.08%, 66.00% 93.40%, 68.00% 92.70%, 70.00% 92.12%, 72.00% 91.75%, 74.00% 91.68%, 76.00% 91.89%, 78.00% 92.37%, 80.00% 93.02%, 82.00% 93.73%, 84.00% 94.36%, 86.00% 94.81%, 88.00% 95.00%, 90.00% 94.88%, 92.00% 94.49%, 94.00% 93.89%, 96.00% 93.19%, 98.00% 92.51%, 100.00% 91.98%);
 }
@@ -122,11 +123,13 @@ h1{
 .foam{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -15em;
     background-color: #fff;
+    rotate: 180deg;
     width: 100%;
-    height: 10em;
+    height: 20em;
     opacity: 0.9;
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 95.00%, 2.00% 94.85%, 4.00% 94.43%, 6.00% 93.81%, 8.00% 93.10%, 10.00% 92.44%, 12.00% 91.94%, 14.00% 91.69%, 16.00% 91.73%, 18.00% 92.06%, 20.00% 92.62%, 22.00% 93.31%, 24.00% 94.00%, 26.00% 94.58%, 28.00% 94.92%, 30.00% 94.99%, 32.00% 94.75%, 34.00% 94.26%, 36.00% 93.60%, 38.00% 92.90%, 40.00% 92.27%, 42.00% 91.83%, 44.00% 91.67%, 46.00% 91.80%, 48.00% 92.21%, 50.00% 92.82%, 52.00% 93.52%, 54.00% 94.19%, 56.00% 94.71%, 58.00% 94.97%, 60.00% 94.95%, 62.00% 94.63%, 64.00% 94.08%, 66.00% 93.40%, 68.00% 92.70%, 70.00% 92.12%, 72.00% 91.75%, 74.00% 91.68%, 76.00% 91.89%, 78.00% 92.37%, 80.00% 93.02%, 82.00% 93.73%, 84.00% 94.36%, 86.00% 94.81%, 88.00% 95.00%, 90.00% 94.88%, 92.00% 94.49%, 94.00% 93.89%, 96.00% 93.19%, 98.00% 92.51%, 100.00% 91.98%);
 }
 
 .sea-animation{
@@ -157,9 +160,10 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 3;
     padding: 0.5em;
     width: 100%;
+    overflow: hidden;
 }
 
 .cards-animation {
@@ -170,11 +174,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .card{
     margin: 0.5em;
+}
+
+.card:hover{
+    scale: 1.2;
 }
 
 .card:nth-child(1){
@@ -197,35 +204,37 @@ h1{
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 6;
+    z-index: 2;
 }
 
 .umbrella{
-    width: 8em;
-    height: 8em;
-    background-image: url('assets/Achtergronden/umbrella.png');
-    box-shadow: 10px 10px 0 0 #ad9d6b;
+    width: 10em;
+    height: 10em;
+    background-image: url('../assets/Achtergronden/umbrella.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     position: absolute;
 }
 
 .umbrella:nth-child(1){
-    bottom: 2%;
-    left: 1%;
+    bottom: 1%;
+    left: 0;
 }
 
 .umbrella:nth-child(2){
-    bottom: 15%;
-    right: 5%;
+    bottom: 14%;
+    right: 2%;
 }
 
 .umbrella:nth-child(3){
-    bottom: 18%;
+    bottom: 16%;
     left: 8%;
 }
 
 .umbrella:nth-child(4){
     bottom: 4%;
-    right: 14%;
+    right: 12%;
 }
 
 button {
@@ -324,19 +333,8 @@ button {
 /* media query */
 /*mobile */
 @media (max-width:767px) {
-    body{
-        overflow: hidden;
-    }
     .card-grid{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 4;
-        padding: 0.5em;
-        width: 100%;
-        animation: card-movement 4s ease forwards;
-        overflow: hidden;
- 
+        overflow: scroll;
     }
     #Group1{
         visibility: hidden;
@@ -358,6 +356,10 @@ button {
     }
     h1{
         font-size: 20px;
+    }
+    .umbrella{
+        width: 4em;
+        height: 4em;
     }
 
 }
