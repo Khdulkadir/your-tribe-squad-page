@@ -1,4 +1,5 @@
 # Squad Page
+![image](https://github.com/RukiyaTossou/your-tribe-squad-page/assets/144006281/bf88057a-e638-4cd1-9e48-a61ccdf9c3f0)
 
 
 Dit project omvat een Squad page dat gemaakt is in `VisualCode`.
