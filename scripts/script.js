@@ -1,6 +1,6 @@
 
 function loadImages(){
-    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/Kaart_Rukiya.png', 'assets/kaarten/Kaart_Yassir.png'];
+    const images = ['assets/kaarten/Kaart_Mohammed.png', 'assets/kaarten/Kaart_Kaan.png', 'assets/kaarten/kaart_Rukiya.png', 'assets/kaarten/Kaart_Yassir.png'];
 
     const links = ['https://mossati.github.io/your-tribe-profile-card/', 'https://khdulkadir.github.io/your-tribe-profile-card/','https://rukiyatossou.github.io/your-tribe-profile-card/', 'https://yassirog.github.io/your-tribe-profile-card/'];
 

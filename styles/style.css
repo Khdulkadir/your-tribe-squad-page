@@ -12,7 +12,7 @@ body, html {
 body{
     height: 100%;
     width: 100%;
-    background-image: url('/assets/Achtergronden/sand.jpg');
+    background-image: url('../assets/Achtergronden/sand.jpg');
     /* background-image: linear-gradient(90deg, #edcd9a, #f0e4cf); */
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ header{
 
 nav {
     float:right;
-    margin-top: -25px;
+    margin-top: -30px;
     padding: 5px 5px;
 }
 
@@ -54,7 +54,7 @@ ul.horizontal-menu li:last-child {
 ul.horizontal-menu li a {
     text-decoration: none;
     padding: 5px 10px;
-    background-color: #34d5db;
+    background-color: #2cb5ba;
     color: #fff;
     border-radius: 5px;
 }
@@ -159,7 +159,7 @@ button {
     color: blue;
 }
 
-#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img {
+#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img, #card1-3 img {
     height: 150px;
 }
 
@@ -191,8 +191,8 @@ button {
 
 @keyframes dark-sea-movement {
     0% {opacity: 0;}
-    50% {opacity: 0;}
-    80% {opacity: 0.5;}
+    45% {opacity: 0;}
+    50% {opacity: 0.5;}
     100% {opacity: 0;}
 }
 
