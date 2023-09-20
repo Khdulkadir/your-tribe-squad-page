@@ -14,7 +14,8 @@ function loadImages(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -51,7 +52,8 @@ function group1(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -95,7 +97,8 @@ function group2(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -139,7 +142,8 @@ function group3(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -183,7 +187,8 @@ function group4(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -227,7 +232,8 @@ function group5(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);
@@ -271,7 +277,8 @@ function group6(){
         div.classList.add("card");
         const a = document.createElement('a');
         const img = document.createElement('img');
-        a.href = links[i]
+        a.href = links[i];
+        a.target = "_blank";
         img.src = images[i];
         container.appendChild(div);
         div.appendChild(a);

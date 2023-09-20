@@ -72,7 +72,6 @@ ul.horizontal-menu li a:hover {
     padding-left: 30px
 }
 
-
 h1{
     font-style: italic;
     color: white;
@@ -118,7 +117,6 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: rgb(65, 185, 79); */
     z-index: 3;
     padding: 0.5em;
     width: 100%;
@@ -130,7 +128,6 @@ h1{
 
 .card-row{
     display: flex;
-    /* background-color: darkgoldenrod; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -194,7 +191,8 @@ button {
 
 @keyframes dark-sea-movement {
     0% {opacity: 0;}
-    50% {opacity: 0.5;}
+    50% {opacity: 0;}
+    80% {opacity: 0.5;}
     100% {opacity: 0;}
 }
 
