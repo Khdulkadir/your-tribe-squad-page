@@ -54,7 +54,7 @@ ul.horizontal-menu li:last-child {
 ul.horizontal-menu li a {
     text-decoration: none;
     padding: 5px 10px;
-    background-color: #34d5db;
+    background-color: #2cb5ba;
     color: #fff;
     border-radius: 5px;
 }
@@ -194,6 +194,7 @@ button {
 
 @keyframes dark-sea-movement {
     0% {opacity: 0;}
+    45% {opacity: 0;}
     50% {opacity: 0.5;}
     100% {opacity: 0;}
 }
