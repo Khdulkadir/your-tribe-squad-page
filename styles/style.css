@@ -32,7 +32,7 @@ header{
 
 nav {
     float:right;
-    margin-top: -25px;
+    margin-top: -30px;
     padding: 5px 5px;
 }
 
@@ -162,7 +162,7 @@ button {
     color: blue;
 }
 
-#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img {
+#card1-0 img, #card2-1 img, #card4-0 img, #card4-1 img, #card1-3 img {
     height: 150px;
 }
 
