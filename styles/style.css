@@ -143,7 +143,7 @@ h1 {
 
     .mobile-nav-toggle {
         position: absolute;
-        background: url('/assets/icons8-hamburger.svg');
+        background: url('../assets/icons8-hamburger.svg');
         background-repeat: no-repeat;
         background-color: transparent;
         border: 0;
@@ -157,10 +157,14 @@ h1 {
     
     }
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('/assets/icons8-close.svg');
+        background-image: url('../assets/icons8-close.svg');
     }
     .buttons {right: 5.5rem;
     top: 0.75rem;}
+
+    #sun {
+        right: 0em;
+}
 }
 
 @media (min-width: 60em) {
