@@ -139,7 +139,15 @@ h1 {
 
 
     
-    h1 {padding-top: 10px}
+    h1 {padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        font-size: 20px;
+        margin-top: 5px;
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+        color: #fff;
+        border-radius: 5px;}
 
     .mobile-nav-toggle {
         position: absolute;
@@ -164,6 +172,8 @@ h1 {
 
     #sun {
         right: 0em;
+        width: 8em;
+        height: 8em;
 }
 }
 
