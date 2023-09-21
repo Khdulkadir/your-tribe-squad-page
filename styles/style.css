@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -38,7 +39,7 @@ body{
     opacity: 0.3;
 }
 
-header{
+/* header{
     position: absolute;
     top: 0;
     left: 0;
@@ -46,55 +47,142 @@ header{
     padding: 0.5em;
     background-color: #65dade;
     z-index: 10;
-}
+} */
 
-nav {
+/* nav {
     float:right;
     margin-top: -30px;
     padding: 5px 5px;
+} */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 
-ul.horizontal-menu {
-    list-style-type: none;
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.buttons { list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    position: fixed;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
 }
 
-ul.horizontal-menu li {
-    margin-right: 10px;
+.buttons a:hover {
+    background: hsl(0 0% 100% / 0.2);
+    backdrop-filter: blur(1rem);
 }
 
-ul.horizontal-menu li:last-child {
-    margin-right: 0;
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-ul.horizontal-menu li a {
+.primary-navigation a {
     text-decoration: none;
     padding: 5px 10px;
-    background-color: #2cb5ba;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
     color: #fff;
     border-radius: 5px;
 }
 
-ul.horizontal-menu li a:hover {
-    background-color: #29a9ad;
+.primary-navigation a:hover {
+    background: hsl(0 0% 100% / 0.2);
+    backdrop-filter: blur(1rem);
 }
 
-#shuffle {
-    margin-top: -3px
-}
-
-#mute {
-    margin-top: -3px;
-    padding-left: 30px
-}
-
-h1{
-    font-style: italic;
+h1 {
     color: white;
-    font-weight: bold;
+    padding-left: 20px;
+    font-style: italic;
 }
+
+@media (max-width: 60em) {
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+        flex-direction: column;
+        padding: min(10vh, 10rem) 4em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+        transition: transform 350ms ease-out;
+    }
+
+
+    
+    h1 {padding-top: 10px}
+
+    .mobile-nav-toggle {
+        position: absolute;
+        background: url('/assets/icons8-hamburger.svg');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: 0;
+        width: 2rem;
+        aspect-ratio:  1 / 1;
+        top: 1rem;
+        right: 2rem;
+        z-index: 9999;
+        display: block;
+        
+    
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url('/assets/icons8-close.svg');
+    }
+    .buttons {right: 5.5rem;
+    top: 0.75rem;}
+}
+
+@media (min-width: 60em) {
+    .primary-navigation {
+        padding: 1.5rem;
+        margin-right: 115px
+    }
+    .buttons {
+        right: 2rem;
+        top: 1.2rem;  
+    }
+    
+    .primary-header {
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    }
+    #speaker, #shuffle {
+        margin-top: 0px;
+    }
+    }
+
 
 .dark-sea{
     position: absolute;
@@ -237,15 +325,7 @@ h1{
     right: 12%;
 }
 
-button {
-    position: absolute;
-    bottom: 5em;
-    left: 50%;
-    z-index: 6;
-    padding: 2em;
-    background-color: aqua;
-    color: blue;
-}
+
 
 #card1-0 img, #card3-1 img, #card4-0 img, #card4-1 img, #card1-3 img, #card2-2 img {
     height: 150px;
@@ -334,28 +414,7 @@ button {
 /*mobile */
 @media (max-width:767px) {
     .card-grid{
-        overflow: scroll;
-    }
-    #Group1{
-        visibility: hidden;
-    }
-    #Group2{
-        visibility: hidden;
-    }
-    #Group3{
-        visibility: hidden;
-    }
-    #Group4{
-        visibility: hidden;
-    }
-    #Group5{
-        visibility: hidden;
-    }
-    #Group6{
-        visibility: hidden;
-    }
-    h1{
-        font-size: 20px;
+        overflow-x: scroll;
     }
     .umbrella{
         width: 4em;
@@ -366,36 +425,10 @@ button {
 
 /* tablet */
 
-@media(min-width:768px) and (max-width:1279px){
-    #Group1{
-        visibility: hidden;
-    }
-    #Group2{
-        visibility: hidden;
-    }
-    #Group3{
-        visibility: hidden;
-    }
-    #Group4{
-        visibility: hidden;
-    }
-    #Group5{
-        visibility: hidden;
-    }
-    #Group6{
-        visibility: hidden;
-    }
-    h1{
-        font-size: 20px;
-    }
+/* @media(min-width:768px) and (max-width:1279px){
 
 
-}
+} */
 /* desktop */
-@media (min-width:1280px) {
-    .dropdown{
-        visibility: hidden;
-    }
-
-    
-}
+/* @media (min-width:1280px) {
+} */

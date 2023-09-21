@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squad Page</title>
     <link href="styles/style.css" rel="stylesheet">
-    <script src="scripts/script.js"></script>
+    
 </head>
 <body onload="loadImages()">
 
@@ -19,19 +19,25 @@
       
 
     <article class="sand-img"></article>
-    <header>
+    <header class="primary-header flex">
         <h1>Squad Page</h1>
-        <nav><ul class="horizontal-menu">  
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">  
             <li id="Group1"><a href="#" onclick="group1()">RuMoKaYa</a></li>
             <li id="Group2"><a href="#" onclick="group2()">Pokemon GO</a></li>
             <li id="Group3"><a href="#" onclick="group3()">Pixel Crafters</a></li>
             <li id="Group4"><a href="#" onclick="group4()">Slay</a></li>
             <li id="Group5"><a href="#" onclick="group5()">JSS</a></li>
             <li id="Group6"><a href="#" onclick="group6()">Gokverslaafde</a></li>
+            </ul>
+            <ul id="buttons" class="buttons flex">
             <li><a href="#" id="speaker" onclick="music()">🔊</a></li>
             <li id="shuffle"><a href="#" onclick="Shuffle()">🔀</a></li>
-            <li class="dropdown"><a href="#">Groups</a></li>
             </ul>
+            
         </nav>
     </header>
     
@@ -55,5 +61,6 @@
     </article>
 
     <article class="sun" id="sun"></article>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

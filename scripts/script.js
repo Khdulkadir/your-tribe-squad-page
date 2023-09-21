@@ -339,3 +339,32 @@ function Shuffle() {
     }
 }
 
+
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+const navItems = document.querySelectorAll(".primary-navigation a");
+
+// Function to close the menu
+function closeMenu() {
+    primaryNav.setAttribute("data-visible", "false");
+    navToggle.setAttribute("aria-expanded", "false");
+}
+
+// Add a click event listener to each menu item
+navItems.forEach((item) => {
+    item.addEventListener("click", closeMenu);
+});
+
+// Toggle the menu when the button is clicked
+navToggle.addEventListener("click", () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible", "true");
+        navToggle.setAttribute("aria-expanded", "true");
+    } else if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", "false");
+        navToggle.setAttribute("aria-expanded", "false");
+    }
+});
+
